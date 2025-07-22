@@ -1,54 +1,121 @@
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-color: #f0f2f5;
+    padding: 20px;
+    box-sizing: border-box;
+
+/* Styling for the main profile card: */
 .profile-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
+    padding: 40px;
     text-align: center;
-    max-width: 350px; /* Limit the width of the card */
-    width: 90%; /* Responsive width */
+    max-width: 380px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* Effecst for the profile card */
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the avatar */
 .avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    margin-bottom: 20px;
-    border: 4px solid #4CAF50; /* A nice border around the avatar */
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 5px solid #4CAF50;
+    box-shadow: 0 0 0 7px rgba(76, 175, 80, 0.3);
 }
 
+/* Styling for the name */
 .name {
-    font-size: 2em; /* Larger font size for the name */
-    margin-bottom: 5px;
-    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    color: #333333;
+    font-weight: 700;
 }
 
+/* Styling for the title */
 .role {
-    font-size: 1.1em;
-    color: #777;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #666666;
+    margin-bottom: 25px;
+    font-weight: 500;
 }
 
+/* Styling for the bio paragraph */
 .bio {
-    font-size: 0.95em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 30px;
+    font-size: 1em;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 35px;
 }
 
+/* Styling for the social links container */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between social icons */
+    gap: 25px;
 }
 
+/* Styling for individual social link images */
 .social-links img {
-    width: 30px; /* Size for social icons */
-    height: 30px;
-    border-radius: 5px; /* Slightly rounded corners for icons */
-    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
 }
 
+/* Effect for social link images */
 .social-links img:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 30px 20px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        font-size: 1.8em;
+    }
+
+    .role {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .bio {
+        font-size: 0.9em;
+        margin-bottom: 25px;
+    }
+
+    .social-links {
+        gap: 15px; 
+    }
+
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
 }
