@@ -1,121 +1,77 @@
+/* General Body Styling */
 body {
-    font-family: 'Inter', sans-serif;
+    background-color: #1a202c; /* Dark grey background, equivalent to Tailwind's bg-gray-800 */
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh; 
-    margin: 0;
-    background-color: #f0f2f5;
-    padding: 20px;
-    box-sizing: border-box;
+    justify-content: center;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    padding: 1rem; /* Equivalent to Tailwind's p-4 */
+    font-family: 'Inter', sans-serif; /* Using Inter as a standard font */
+}
 
-/* Styling for the main profile card: */
+/* Profile Card */
 .profile-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
-    padding: 40px;
-    text-align: center;
-    max-width: 380px;
+    background-color: #1f2937; /* darker grey for the card */
+    color: #ffffff; /* White text */
+    padding: 2rem; 
+    border-radius: 1rem; /* Rounded borders */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Shadow */
+    max-width: 24rem; /* Max width */
     width: 100%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
 }
 
-/* Effecst for the profile card */
-.profile-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* Styling for the avatar */
+/* Avatar Styling */
 .avatar {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 25px;
-    border: 5px solid #4CAF50;
-    box-shadow: 0 0 0 7px rgba(76, 175, 80, 0.3);
+    width: 144px; /* 1.5 inches */
+    height: 144px; /* 1.5 inches */
+    border-radius: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem; 
+    object-fit: cover; 
+    border: 4px solid #8b5cf6;
 }
 
-/* Styling for the name */
+/* Name Styling */
 .name {
-    font-size: 2.2em;
-    margin-bottom: 8px;
-    color: #333333;
-    font-weight: 700;
+    font-size: 2.25rem; 
+    font-weight: 700; 
+    margin-bottom: 0.5rem;
+    color: #c084fc; 
 }
 
-/* Styling for the title */
+/* Role Styling */
 .role {
-    font-size: 1.2em;
-    color: #666666;
-    margin-bottom: 25px;
-    font-weight: 500;
+    font-size: 1.125rem; 
+    color: #9ca3af; /* Grey text */
+    margin-bottom: 1.5rem;
 }
 
-/* Styling for the bio paragraph */
+/* Bio Styling */
 .bio {
-    font-size: 1em;
-    line-height: 1.7;
-    color: #555555;
-    margin-bottom: 35px;
+    color: #d1d5db; /* Light grey text */
+    line-height: 1.625;
+    margin-bottom: 2rem; 
 }
 
-/* Styling for the social links container */
+/* Social Links */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
-/* Styling for individual social link images */
+/* Social Link Images */
 .social-links img {
-    width: 35px;
-    height: 35px;
-    border-radius: 8px;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Effect for social link images */
-.social-links img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 600px) {
-    .profile-card {
-        padding: 30px 20px;
-    }
-
-    .avatar {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 20px;
-    }
-
-    .name {
-        font-size: 1.8em;
-    }
-
-    .role {
-        font-size: 1em;
-        margin-bottom: 20px;
-    }
-
-    .bio {
-        font-size: 0.9em;
-        margin-bottom: 25px;
-    }
-
-    .social-links {
-        gap: 15px; 
-    }
-
-    .social-links img {
-        width: 30px;
-        height: 30px;
-    }
+/* Social Link Hover Effect */
+.social-links a:hover img {
+    transform: scale(1.1); 
 }
