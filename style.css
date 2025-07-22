@@ -1,49 +1,49 @@
 /* General Body Styling */
 body {
-    background-color: #1a202c; /* Dark grey background, equivalent to Tailwind's bg-gray-800 */
+    background-color: #1a202c; /* Dark grey background */
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* Ensure it takes full viewport height */
-    padding: 1rem; /* Equivalent to Tailwind's p-4 */
+    padding: 1rem;
     font-family: 'Inter', sans-serif; /* Using Inter as a standard font */
 }
 
-/* Profile Card */
+/* Profile Card Container */
 .profile-card {
-    background-color: #1f2937; /* darker grey for the card */
+    background-color: #1f2937; /* Slightly darker grey for the card */
     color: #ffffff; /* White text */
-    padding: 2rem; 
+    padding: 2rem;
     border-radius: 1rem; /* Rounded borders */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Shadow */
     max-width: 24rem; /* Max width */
-    width: 100%;
+    width: 100%; /* Full width up to max-width */
     text-align: center;
 }
 
 /* Avatar Styling */
 .avatar {
-    width: 144px; /* 1.5 inches */
-    height: 144px; /* 1.5 inches */
-    border-radius: 50%; 
+    width: 144px; /* Approximately 1.5 inches */
+    height: 144px; /* Approximately 1.5 inches */
+    border-radius: 50%; /* Makes the image perfectly circular */
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1.5rem; 
-    object-fit: cover; 
-    border: 4px solid #8b5cf6;
+    margin-bottom: 1.5rem;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 4px solid #8b5cf6; /* Purple border */
 }
 
 /* Name Styling */
 .name {
-    font-size: 2.25rem; 
-    font-weight: 700; 
+    font-size: 2.25rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #c084fc; 
+    color: #c084fc; /* Purple text */
 }
 
 /* Role Styling */
 .role {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     color: #9ca3af; /* Grey text */
     margin-bottom: 1.5rem;
 }
@@ -52,26 +52,26 @@ body {
 .bio {
     color: #d1d5db; /* Light grey text */
     line-height: 1.625;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
-/* Social Links */
+/* Social Links Container */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.5rem; /* Space between social icons */
 }
 
 /* Social Link Images */
 .social-links img {
-    width: 56px;
-    height: 56px;
+    width: 56px; /* Approximately 1.5 centimeters */
+    height: 56px; /* Approximately 1.5 centimeters */
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
 }
 
 /* Social Link Hover Effect */
 .social-links a:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Scale up on hover */
 }
