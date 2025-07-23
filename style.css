@@ -44,6 +44,8 @@ body {
 /* Role Styling */
 .role {
     font-size: 1.125rem;
+    font-weight: bold;
+    font-style: italic;
     color: #9ca3af; /* Grey text */
     margin-bottom: 1.5rem;
 }
